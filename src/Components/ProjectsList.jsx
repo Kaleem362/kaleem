@@ -64,7 +64,7 @@ function ProjectsList({ theme }) {
       description:
         "This is the official website of Fordnine Solution developed by me and is based on HTML CSS Reactjs",
       image: projectfiveimage,
-      projectinfo: "Todo List Application",
+      projectinfo: "Fordnine Solution Software Company",
       year: 2022,
       Role: "Project Developer",
       Live: "https://todolistbykaleem.netlify.app/",
