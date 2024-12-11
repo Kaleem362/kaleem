@@ -8,7 +8,6 @@ import Work from "./Components/Work";
 import { useEffect, useState } from "react";
 
 function App() {
-
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") || "light"; // Default theme is "light"
   });
@@ -56,7 +55,7 @@ function App() {
             <>
               <Navbar theme={theme} handleTheme={handleTheme} />
               <Aboutus theme={theme} />
-              <Contact theme={theme}/>
+              <Contact theme={theme} />
             </>
           }
         />
