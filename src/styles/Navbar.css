@@ -1,0 +1,200 @@
+* {
+  text-decoration: none;
+  transition: 0.3s all ease;
+  width: 100%;
+  padding: 0%;
+  margin: 0px;
+}
+
+nav {
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  padding: 0px 25px;
+  text-decoration: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: relative; /* Ensure proper stacking context */
+  z-index: 999; /* Lower than sticky but still above normal elements */
+
+  /* overflow-x: hidden; */
+}
+.navbar-shadow {
+  box-shadow: 0 4px 4px white; /* Shadow only at the bottom */
+}
+
+.navbar-sticky {
+  position: fixed;
+  transition: 0.2s all ease-in;
+  box-shadow: 3px 3px 10px black;
+  z-index: 1000; /* Ensure the Navbar appears on top */
+}
+.name h1 {
+  text-decoration: none;
+  margin: 0px 20px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.name a {
+  text-decoration: none;
+}
+
+.pages {
+  margin-right: 130px;
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.pages li {
+  float: right;
+  margin: 0 1rem;
+  width: fit-content;
+}
+
+.pages li:hover {
+  color: black;
+  font-weight: bolder;
+  transition: 0.02s all ease !important;
+}
+.pages li link:active {
+  color: skyblue;
+}
+.pages li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0px;
+  font-family: "Manrope", sans-serif;
+}
+
+/* Adjusting for menu toggle */
+.menuimg {
+  display: none; /* Hidden by default */
+}
+
+/* Toggle navbar visibility */
+.nav-links {
+  display: flex;
+  margin: 0px;
+}
+
+/* Responsive design for 768px and below */
+@media screen and (max-width: 768px) {
+  /* Hide nav-links initially on small screens */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-around;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    box-shadow: 5px 5px 10px black;
+    border: 2px outset black;
+
+    transition: 0.2s all ease;
+  }
+
+  .nav-links.nav-visible {
+    display: flex;
+    width: 100%;
+  }
+  .nav-links li {
+    margin: 10px auto;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  .menuimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 100%;
+    /* position: absolute; */
+    /* top: 50; */
+    right: 30;
+  }
+  .menuimg img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  nav {
+    /* background-color: #0a0a0a; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 90px;
+    padding: 0px 25px;
+    text-decoration: none;
+  }
+  .toggle-btn {
+    position: absolute;
+    /* top: 50%; */
+    right: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .name h1 {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  .name {
+    display: none;
+    width: fit-content;
+    margin-right: 20px;
+    font-size: -7px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .name h1 {
+    font-size: 12px;
+    display: none;
+  }
+  nav {
+    padding: 0px 15px;
+    height: 70px;
+    flex-direction: row-reverse;
+    position: relative;
+    top: 0;
+    width: 100% !important;
+    z-index: 999;
+  }
+  .toggle-btn {
+    width: 100px;
+    margin: 0px 0px;
+    height: 5%;
+    right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+  .toggle-btn svg {
+    size: 20px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  nav {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,300 @@
+.FeaturedDiv {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  background-color: #0a0a0a;
+  padding: 70px;
+  width: 100vw;
+  flex-direction: column;
+  border-top: 1px solid #d3e97a;
+  overflow-x: hidden ;
+}
+.CourseList {
+  height: auto;
+  background-color: transparent;
+  /* padding: 100px; */
+}
+.titlebar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  margin: 5px 0px;
+  padding: 0px 22px;
+}
+.titlebar p {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: normal;
+  width: 500px;
+  text-align: justify;
+  padding: 0px 22px;
+  font-family: "Manrope", sans-serif;
+}
+.card_1 {
+  background-color: #0a0a0a;
+  height: 500px;
+  /* margin: 2rem auto; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /* border-radius: 10px; */
+  padding: 20px;
+}
+.flex_card_1 {
+  width: 80%;
+  height: 100%;
+  padding: 40px 0px;
+  border-radius: 10px;
+  margin: 0px 20px;
+}
+.flex-card-1-bg {
+  background-color: #c7c7c7;
+}
+.flex_card_1 img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  object-fit: contain;
+  overflow: hidden;
+}
+.flex_card_2 {
+  width: 100vw;
+}
+.flex_card_2 h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 30px;
+  padding: 20px 10px;
+  color: white;
+  text-align: left;
+}
+.flex_card_2 p {
+  font-size: 16px;
+  width: 80%;
+  font-family: "Manrope", sans-serif;
+  text-align: left;
+  color: white;
+  padding: 0px 10px;
+}
+.texts_lines {
+  width: 100%;
+  padding: 25px 10px;
+}
+.texts_lines div small {
+  color: white;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  width: 400px;
+}
+.texts_lines div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c7c7c7;
+}
+.texts_lines div p {
+  width: 100%;
+  padding: 10px;
+}
+.link {
+  display: flex;
+  justify-content: space;
+  align-items: center;
+  width: 150px;
+  width: fit-content;
+  border: none;
+}
+.link a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c7e45f;
+  padding: 10px;
+  width: 170px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+}
+.link a img {
+  width: 20px;
+  height: 20px;
+  margin: 10px 10px;
+}
+#no-border {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .titlebar p {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: normal;
+    width: 100%;
+    text-align: justify;
+    word-wrap: break-word;
+    padding: 0px 22px;
+    font-family: "Manrope", sans-serif;
+  }
+  .FeaturedDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* border-radius: 10px; */
+  }
+  .card_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* border-radius: 10px; */
+    height: 100%;
+  }
+  .flex_card_1 {
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    background-color: #1a1a1a;
+    /* border-radius: 10px; */
+  }
+  .flex_card_1 img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .First_sub_div h1 {
+    color: white;
+    font-size: 65px;
+  }
+  .First_sub_div p {
+    font-size: 1rem;
+  }
+  .contact_link {
+    padding-top: 5px;
+    margin: 0px 15px;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dot {
+    width: 20px;
+    height: 20px;
+  }
+  .Second_sub_div {
+    height: 40%;
+    width: 120%;
+  }
+  .FeaturedDiv {
+    padding: 20px;
+  }
+  .First_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 900px;
+    background-color: #0a0a0a;
+    padding: 100px 30px;
+  }
+  .flex_card_2 h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    text-align: left;
+  }
+  .First_sub_div h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: 400;
+  }
+  .flex_card_2 p {
+    font-size: 14px;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+    text-align: left;
+    padding: 0px 10px;
+  }
+  .texts_lines {
+    width: 100%;
+    padding: 25px 0px;
+  }
+  .Second_sub_div {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .flex_card_2 {
+    width: 100%;
+    width: 100vw;
+    padding: 0px 30px;
+  }
+  .FeaturedDiv {
+    padding: 20px;
+  }
+  .First_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 900px;
+    background-color: #0a0a0a;
+    padding: 100px 30px;
+  }
+  .flex_card_2 h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    padding: 24px 10px;
+    text-align: left;
+  }
+  .First_sub_div h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: 400;
+  }
+  .flex_card_2 p {
+    font-size: 14px;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+    text-align: left;
+
+    padding: 0px 10px;
+  }
+  .texts_lines {
+    width: 100%;
+    padding: 25px 0px;
+  }
+  .Second_sub_div {
+    height: 100%;
+    width: 100%;
+  }
+  .flex_card_1 {
+    padding: 0px;
+  }
+  .First_sub_div {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+  }
+  .contact_link {
+    width: 145px;
+    padding: 4px 4px;
+  }
+  .imgdiv {
+    width: 100%;
+    height: 100%;
+  }
+}

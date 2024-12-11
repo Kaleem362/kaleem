@@ -1,0 +1,21 @@
+.custom-font {
+  font-family: "Manrope", sans-serif;
+  color: #cde97a;
+}
+
+body {
+  width: 100%;
+}
+.inputrange {
+  width: 95%;
+  padding: 4px;
+  border: none !important;
+}
+
+.input-margin {
+  margin: 30px auto;
+  width: 70%;
+}
+.img-shadow {
+  box-shadow: 1px 1px 20px black;
+}
