@@ -17,7 +17,7 @@ function ProjectsList({ theme }) {
       projectinfo: "official website",
       year: 2024,
       Role: "Front-end-Developer",
-      live: "https://ford9institute.netlify.app/",
+      live: "https://fordnine.com/institute/",
     },
     {
       title: "Posting Application",
@@ -27,7 +27,7 @@ function ProjectsList({ theme }) {
       projectinfo: "posting Management Application",
       year: 2024,
       Role: "Front-end-Developer [React.js]",
-      live: "https://postingappbymatrix.netlify.app/",
+      live: "https://posting-application.vercel.app/",
     },
     {
       title: "Password Checker",
@@ -53,6 +53,16 @@ function ProjectsList({ theme }) {
       title: "Todo List Application",
       description:
         "this is pure html css javascript based project which work as todo list application which  can add ,mark/ un-mark and edit the task.",
+      image: projectfiveimage,
+      projectinfo: "Todo List Application",
+      year: 2022,
+      Role: "Project Developer",
+      Live: "https://todolistbykaleem.netlify.app/",
+    },
+    {
+      title: "Fordnine Solution Official website",
+      description:
+        "This is the official website of Fordnine Solution developed by me and is based on HTML CSS Reactjs",
       image: projectfiveimage,
       projectinfo: "Todo List Application",
       year: 2022,
