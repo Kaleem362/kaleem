@@ -6,6 +6,7 @@ import Project from "./Project";
 import Projectthree from "../images/Projectthreeimage.png";
 import projectfourimage from "../images/projectfourimage.png";
 import projectfiveimage from "../images/projectfiveimage.png";
+import ProjectSixImage from "../images/ProjectSixImage.png";
 
 function ProjectsList({ theme }) {
   const projects = [
@@ -63,10 +64,10 @@ function ProjectsList({ theme }) {
       title: "Fordnine Solution Official website",
       description:
         "This is the official website of Fordnine Solution developed by me and is based on HTML CSS Reactjs",
-      image: projectfiveimage,
+      image: ProjectSixImage,
       projectinfo: "Fordnine Solution Software Company",
-      year: 2022,
-      Role: "Project Developer",
+      year: 2024,
+      Role: "Project Developer & Designer",
       Live: "https://todolistbykaleem.netlify.app/",
     },
   ];
