@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FaLightbulb } from "react-icons/fa6";
 import { FaRegLightbulb } from "react-icons/fa6";
 import logo from "./../images/matrixLogo.png";
-
+import {ThemeToggle} from "./ThemeToggle/ThemeToggle";
 
 
 function Navbar({ theme, handleTheme }) {
@@ -140,17 +140,19 @@ function Navbar({ theme, handleTheme }) {
             onClick={toggleNav}
           />
         </div>
-        <div
+        {/* <div
           className="toggle-btn "
           style={{ width: "150px", paddingTop: "10px" }}
           onClick={handleTheme}
+          ThemeToggle
         >
           {theme === "light" ? (
             <FaRegLightbulb size={24} className="text-black" />
           ) : (
             <FaLightbulb size={24} className="text-light" />
           )}
-        </div>
+        </div> */}
+        <ToggleTheme/>
       </nav>
     </div>
   );
