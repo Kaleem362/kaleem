@@ -32,12 +32,26 @@ nav {
   box-shadow: 3px 3px 10px black;
   z-index: 1000; /* Ensure the Navbar appears on top */
 }
-.name h1 {
-  text-decoration: none;
+.name img {
+  /* text-decoration: none;
   margin: 0px 20px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.7rem; */
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 40px;
+  animation: rotate 20s linear infinite;
+  width: 100px;
+}
+
+@keyframes rotate {
+  from {
+transform : rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .name a {
   text-decoration: none;

@@ -6,11 +6,15 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaLightbulb } from "react-icons/fa6";
 import { FaRegLightbulb } from "react-icons/fa6";
+import logo from "./../images/matrixLogo.png";
+
+
 
 function Navbar({ theme, handleTheme }) {
   const [isNavVisible, setIsNavVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isSticky, setIsSticky] = useState(false); // New sticky state
+  console.log(logo)
 
   // Toggle the visibility of the nav
   const toggleNav = () => {
@@ -66,15 +70,17 @@ function Navbar({ theme, handleTheme }) {
       >
         <div className="name">
           <a href="#">
-            <h1
+            <img
               className={
                 theme === "light"
                   ? "bg-transparent" && "text-black"
                   : "bg-transparent" && "text-light"
               }
+              
+              src={logo}
             >
-              KALEEM ULLAH
-            </h1>
+              
+            </img>
           </a>
         </div>
         <div className="pages">
